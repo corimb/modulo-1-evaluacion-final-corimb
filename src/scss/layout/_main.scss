@@ -1,0 +1,82 @@
+.tips {
+  margin: 30px 15px;
+
+  @include tablet {
+    .wrapper {
+      max-width: 690px;
+      margin: auto;
+    }
+  }
+
+  @include desktop {
+    .wrapper {
+      max-width: 730px;
+    }
+  }
+  p {
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: $weight-regular;
+    color: $color-medium;
+    line-height: 30px;
+    margin-top: 15px;
+
+    @include tablet {
+      font-size: 1.25rem;
+    }
+  }
+
+  .insomnia {
+    font-family: $font-main;
+    font-size: 0.875rem;
+    font-weight: $weight-regular;
+    color: $color-secondary-dark;
+    text-transform: capitalize;
+    line-height: 30px;
+  }
+
+  &__title span {
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    font-weight: $weight-bold;
+    color: $color-dark;
+    text-transform: capitalize;
+    line-height: 30px;
+    display: block;
+
+    @include tablet {
+      display: inline;
+      font-size: 1.625rem;
+      line-height: 45px;
+    }
+
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+
+  .go__button {
+    width: 76px;
+    height: 45px;
+    border: 2px solid $color-tertiary;
+    border-radius: 22.5px;
+    color: $color-tertiary;
+    background-color: $color-light;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 34px;
+    font-size: 1.25rem;
+    font-weight: $weight-medium;
+
+    @include tablet {
+      width: 91px;
+    }
+
+    @include desktop {
+      width: 160px;
+    }
+  }
+}
