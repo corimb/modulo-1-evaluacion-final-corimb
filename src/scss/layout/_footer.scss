@@ -8,7 +8,19 @@
   color: $color-light;
   position: relative;
 
-  &--button {
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  @include desktop {
+    justify-content: center;
+    align-content: space-around;
+  }
+
+  .footer__button {
     width: 45px;
     height: 45px;
     background-color: $color-light;
@@ -18,13 +30,27 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
   }
-
-  .articles__menu,
   .twitter__menu {
     text-transform: uppercase;
     margin-bottom: 30px;
     line-height: 30px;
+  }
+
+  .articles__menu {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 30px;
+
+    @include tablet {
+      margin-right: 30px;
+    }
+
+    @include desktop {
+      padding-right: 90px;
+    }
   }
 
   .articles__menu {
@@ -35,6 +61,14 @@
     margin-bottom: 45px;
     display: block;
     line-height: 30px;
+
+    @include tablet {
+      order: -1;
+    }
+
+    @include desktop {
+      padding-right: 90px;
+    }
   }
 
   .copy span {
