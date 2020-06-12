@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $color-primary;
+  color: $color-light;
+  position: relative;
+
+  &--button {
+    width: 45px;
+    height: 45px;
+    background-color: $color-light;
+    border-radius: 22.5px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .articles__menu,
+  .twitter__menu {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+
+  .articles__menu {
+    margin-top: 60px;
+  }
+
+  .copy {
+    margin-bottom: 45px;
+    display: block;
+    line-height: 30px;
+  }
+
+  .copy span {
+    display: inline;
+  }
+
+  .we::after {
+    content: '❤︎';
+    color: $color-tertiary;
+  }
+}

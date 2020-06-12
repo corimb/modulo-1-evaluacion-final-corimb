@@ -139,7 +139,6 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 0;
-    margin: auto;
 
     &__title {
       grid-column: span 7;
@@ -171,9 +170,6 @@
   }
 
   @include desktop {
-    .first__article,
-    .second__article,
-    .third__article,
     &__button {
       max-width: 353px;
     }
