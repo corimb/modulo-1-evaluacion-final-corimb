@@ -13,7 +13,7 @@
       max-width: 730px;
     }
   }
-  p {
+  .tips__paragraph {
     font-family: $font-main;
     font-size: 1.125rem;
     font-weight: $weight-regular;
@@ -71,7 +71,7 @@
     font-size: 1.25rem;
     font-weight: $weight-medium;
     cursor: pointer;
-    transition: background-color, color 1s ease;
+    transition: background-color 2s ease, color 2s ease;
   }
 
   .go__button:hover {
@@ -141,7 +141,7 @@
     justify-content: center;
     font-weight: $weight-medium;
     cursor: pointer;
-    transition: background-color, color, border 1s ease;
+    transition: background-color 1s ease, color, border 1s ease;
   }
 
   .reasons__button:hover {
