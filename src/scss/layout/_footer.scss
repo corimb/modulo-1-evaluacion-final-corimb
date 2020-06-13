@@ -34,6 +34,22 @@
     justify-content: center;
   }
 
+  .footer__button:hover {
+    animation-duration: 0.8s;
+    animation-name: button;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+  }
+  @keyframes button {
+    from {
+      transform: translate(-50%, -50%);
+    }
+    to {
+      transform: translate(-50%, -70%);
+      animation-play-state: running;
+    }
+  }
+
   .twitter__menu {
     text-transform: uppercase;
     margin-bottom: 30px;
