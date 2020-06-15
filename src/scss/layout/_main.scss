@@ -102,28 +102,26 @@
     font-family: $font-secondary;
     font-size: 1.5rem;
     font-weight: $weight-bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: auto;
   }
 
   .article {
     grid-column: span 2;
     display: grid;
     grid-auto-rows: minmax(30%, max-content);
-  }
 
-  .article--title {
-    grid-row: 1;
-    font-size: 1.5rem;
-  }
+    &--title {
+      grid-row: 1;
+      font-size: 1.5rem;
+    }
 
-  .article--text {
-    grid-row: 2;
-    line-height: 30px;
-    font-size: 1.5rem;
-    padding-left: 20%;
-    padding-right: 20%;
+    &--text {
+      grid-row: 2;
+      line-height: 30px;
+      font-size: 1.5rem;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
   }
 
   &__button {
@@ -159,8 +157,6 @@
     &__title {
       grid-column: span 6;
       grid-row: 1;
-      flex-direction: row;
-      align-items: center;
       font-size: 1.625rem;
       line-height: 45px;
     }
@@ -169,16 +165,16 @@
       grid-column: span 2;
       display: grid;
       grid-auto-rows: minmax(30%, max-content);
-    }
 
-    .article--title {
-      grid-row: 1;
-      font-size: 1.5rem;
-    }
+      &--title {
+        grid-row: 1;
+        font-size: 1.5rem;
+      }
 
-    .article--text {
-      grid-row: 2;
-      font-size: 1.5rem;
+      &--text {
+        grid-row: 2;
+        font-size: 1.5rem;
+      }
     }
 
     &__button {
