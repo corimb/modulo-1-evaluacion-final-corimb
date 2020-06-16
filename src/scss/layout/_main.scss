@@ -20,9 +20,11 @@
     color: $color-medium;
     line-height: 30px;
     margin-top: 15px;
+    margin-bottom: 20px;
 
     @include tablet {
       font-size: 1.25rem;
+      margin-bottom: 0;
     }
   }
 
@@ -55,36 +57,70 @@
     }
   }
 
+  // .go__button {
+  //   width: 76px;
+  //   height: 45px;
+  //   border: 2px solid $color-tertiary;
+  //   border-radius: 22.5px;
+  //   color: $color-tertiary;
+  //   background-color: $color-light;
+  //   text-align: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   margin-bottom: 45px;
+  //   margin-top: 34px;
+  //   font-size: 1.25rem;
+  //   font-weight: $weight-medium;
+  //   cursor: pointer;
+  //   transition: background-color 2s ease, color 2s ease;
+
+  //   @include tablet {
+  //     width: 91px;
+  //   }
+
+  //   @include desktop {
+  //     width: 160px;
+  //   }
+
+  //   &:hover {
+  //     background-color: $color-primary;
+  //     color: $color-light;
+  //   }
+  // }
+
   .go__button {
-    width: 76px;
+    font-size: 1.125rem;
+    width: 184px;
     height: 45px;
-    border: 2px solid $color-tertiary;
     border-radius: 22.5px;
-    color: $color-tertiary;
-    background-color: $color-light;
-    text-align: center;
+    color: $color-light;
+    background-color: $color-tertiary;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 45px;
-    margin-top: 34px;
-    font-size: 1.25rem;
+    align-items: center;
     font-weight: $weight-medium;
+    margin: auto;
+    margin-bottom: 60px;
     cursor: pointer;
-    transition: background-color 2s ease, color 2s ease;
+    transition: background-color 1s ease, color border 1s ease;
 
     @include tablet {
-      width: 91px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      width: 210px;
     }
 
     @include desktop {
-      width: 160px;
+      width: 255px;
     }
+  }
 
-    &:hover {
-      background-color: $color-primary;
-      color: $color-light;
-    }
+  .go__button:hover {
+    background-color: $color-primary;
+    color: $color-light;
+    border: 2px solid $color-primary;
   }
 }
 
