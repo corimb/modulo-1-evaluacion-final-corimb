@@ -2,7 +2,7 @@
    El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado en Zeplin. Hay que resolver varios puntos:
 - Usar Sass.
 - Usar flexbox y CSS Grid.
- -Usar media queries.
+- Usar media queries.
 - Resolver algunas interacciones usando transiciones.
 
 # Este proyecto incluye el starter kit de Adalab
